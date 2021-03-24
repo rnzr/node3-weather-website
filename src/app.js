@@ -6,6 +6,7 @@ const hbs = require('hbs');
 const { registerHelper } = require('hbs');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // define paths for express config
 const publicDirectory = path.join(__dirname,'../public');
@@ -115,4 +116,4 @@ app.get('*',(req,res)=>{
 // app.com/help
 // app.com/about
 
-app.listen(3000, ()=> {console.log("server starts")});
+app.listen(port, ()=> {console.log("server starts at port: "+port)});
