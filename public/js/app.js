@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit',(e)=>{
         }
         else {
             messageOne.textContent = "";
-            messageTwo.textContent = data.address+": "+data.temperature+" Grad Celsius";
+            messageTwo.textContent = "In "+data.address+" beträgt die aktuelle Temperatur: "+data.temperature+" Grad Celsius. Jedoch fühlt es sich eher nach "+data.feelslike+" Grad Celsius an. Die Luftfeuchtigkeit liegt bei "+data.humidity+"%. Wussten Sie dass "+data.address+" in "+data.country+" liegt? Wieder was gerlernt! :)";
             console.log(data.address);
             console.log(data.temperature);
     }  
